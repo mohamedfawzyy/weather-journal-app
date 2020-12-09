@@ -30,7 +30,7 @@ function callback(req,res){
   projectData['date']=req.body.date;
   projectData['user response']=req.body['user response'];
   projectData['key']=req.body.key;
-
+  res.send(projectData);
   console.log(projectData);
 }
 app.get('/all',getData);
